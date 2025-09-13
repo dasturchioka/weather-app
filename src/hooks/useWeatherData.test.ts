@@ -2,7 +2,6 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { renderHook, act, waitFor } from "@testing-library/react";
 import { useWeatherData } from "../hooks/useWeatherData";
 
-// hoist-safe mocks
 const { mockFetchWeatherAndForecast, mockClearCache, mockGetCacheSize } =
   vi.hoisted(() => {
     return {
@@ -12,7 +11,6 @@ const { mockFetchWeatherAndForecast, mockClearCache, mockGetCacheSize } =
     };
   });
 
-// --- Mock the services module the same way the hook imports it ---
 vi.mock("../services", () => ({
   weatherApiService: {
     fetchWeatherAndForecast: mockFetchWeatherAndForecast,

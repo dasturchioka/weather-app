@@ -36,8 +36,8 @@ A modern, responsive weather dashboard built with React, TypeScript, and Tailwin
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/weather-dashboard.git
-cd weather-dashboard
+git clone https://github.com/dasturchioka/weather-app.git
+cd weather-app
 ```
 
 2. Install dependencies:

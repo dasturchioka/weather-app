@@ -45,9 +45,19 @@ cd weather-app
 npm install
 ```
 
-3. Create environment file:
+3. Environment Configuration
+Create environment configuration file:
 ```bash
-cp .env.example .env.local
+touch .env.example .env.local
+```
+
+Edit `.env.local` with your configuration:
+```env
+# Required: Your OpenWeatherMap API Key
+VITE_WEATHER_API_KEY=your_openweathermap_api_key_here
+
+# Optional: API Base URL (defaults to OpenWeatherMap)
+VITE_WEATHER_API_BASE_URL=https://api.openweathermap.org/data/2.5
 ```
 
 4. Start the development server:

@@ -55,17 +55,20 @@ cp .env.example .env.local
 npm run dev
 ```
 
-5. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run test` - Run tests
-- `npm run test:watch` - Run tests in watch mode
-- `npm run lint` - Run ESLint
-- `npm run type-check` - Run TypeScript compiler
+| Command        | Description                          |
+|----------------|--------------------------------------|
+| `npm run dev`  | Start development server with Vite   |
+| `npm run build`| Run TypeScript build and create production build with Vite |
+| `npm run preview` | Preview production build locally   |
+| `npm run lint` | Run ESLint code analysis             |
+| `npm run test` | Run all tests with Vitest            |
+| `npm run test:watch` | Run tests in watch mode         |
+| `npm run test:ui`    | Run tests with Vitest UI        |
+
 
 ## Project Structure
 

@@ -1,4 +1,4 @@
-export * from './debounce';
+export * from './debounce/debounce';
 export * from './throttle';
-export * from './temperatureUtils';
+export * from './temperatureUtils/temperatureUtils';
 export * from './dataTransformation';
